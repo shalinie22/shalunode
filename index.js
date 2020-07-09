@@ -5,7 +5,7 @@ const express = require("express");
 const bodyparser=require("body-parser")
 
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 4000;
 app.use(bodyparser.json())
 var student_details=[{
     "id":1,
@@ -19,7 +19,7 @@ var staff_details=[{
     "name":"shalu",
     "email":"shalu@gmail.com"
 }]
-app.listen(3000,()=>{
+app.listen(4000,()=>{
     console.log("hello",port)
 });
 
