@@ -28,30 +28,8 @@ app.post("/staffdetails",(req,res)=>{
 })
 app.post("/student",(req,res)=>{
     student_details.push(...req.body)
-   
     console.log("okkkk")
 })
-
-// app.put("/staff",(req,res)=>{
-
-// // const ids = student_details.map((a,staff_details)=>
-// // {return a.staff_id==staff_details.id})
-// // res.send(ids)
-
-// const ids=student_details.map((a)=>{
-//    const sids = staff_details.filter((b)=>{
-//         if( b.id==a.staff_id ) {
-//             //console.log(b.id)
-//            return b.id }    
-//     })
-//     return sids
-// })
-
-// const add=staff_details.push({"student_count":ids.length})
-//  res.sendStatus(add)
-//      console.log(add)
-// console.log(ids)
-// })
 
 app.get("/user",(req,res)=>{
     res.send(student_details)
